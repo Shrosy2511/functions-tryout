@@ -1,26 +1,24 @@
-def myFunction():
-    calc = input('wat voor berekening wilt u doen + - / x +1 of -1: ')
-    if calc == '+':
-        number1 = int(input('kies een getal '))
-        number2 = int(input('kies een getal '))
-        print('{}'.format(number1) + '+' + '{}'.format(number2) + '=' + str(number1 + number2))
-    elif calc == '-':
-        number1 = int(input('kies een getal '))
-        number2 = int(input('kies een getal '))
-        print('{}'.format(number1) + '-' + '{}'.format(number2) + ' = ' + str(number1 - number2))
-    elif calc == '/':
-        number1 = int(input('kies een getal '))
-        number2 = int(input('kies een getal '))
-        print('{}'.format(number1) + '-' + '{}'.format(number2) + ' = ' + str(number1 / number2))
-    elif calc == 'x':
-        number1 = int(input('kies een getal '))
-        number2 = int(input('kies een getal '))
-        print('{}'.format(number1) + 'x' + '{}'.format(number2) + ' = ' + str(number1 * number2))
-    elif calc == '+1':
-        number1 = int(input('kies een getal '))
-        print('{}'.format(number1) + '+' + '1' + ' = ' + str(number1 + 1))
-    elif calc == '-1':
-        number1 = int(input('kies een getal '))
-        print('{}'.format(number1) + '-' + '1' + ' = ' + str(number1 - 1))
+def plus(a, b):
+    return(a+b)
 
-myFunction()
+def min(a,b):
+    return(a-b)
+
+def keer(a,b):
+    return(a*b)
+
+def delen(a,b):
+    return(a/b)
+
+def increment(a):
+    return(a+1)
+
+def decrement(a):
+    return(a-1)
+
+print('10', '+', '12', ' = ', plus(10,12))
+print('58', '-', '34', ' = ', min(58,34))
+print('6', 'x', '7', ' = ', keer(6,7))
+print('144', ':', '12', ' = ', int(delen(144,12)))
+print('12', '+', '1', ' = ', increment(12))
+print('34', '-', '1', ' = ', decrement(34))
